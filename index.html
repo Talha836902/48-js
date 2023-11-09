@@ -1,0 +1,247 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Alert Box Example</title>
+</head>
+<body>
+
+<a href="#" id="myLink">Click me to show an alert</a>
+
+<script> -->
+<!-- // Get a reference to the link element by its ID
+var link = document.getElementById("myLink");
+
+// Add a click event listener to the link
+link.addEventListener("click", function(event) {
+  // Prevent the default behavior of the link, so it won't navigate to another page
+  event.preventDefault();
+
+  // Display an alert box when the link is clicked
+  alert("You clicked the link!");
+}); -->
+<!-- </script>
+
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Mobile Phone Images</title>
+</head>
+<body> -->
+
+<!-- Create image elements for mobile phone images -->
+
+<!-- <img src="assets/1-iphone.jpg.jfif"  class="mobile-image" alt="Mobile Phone 1">
+<img src="assets/2-xiaomi.jpg.jfif" class="mobile-image" alt="Mobile Phone 2">
+<img src="assets/3-Samsung.jpg.jfif" class="mobile-image" alt="Mobile Phone 3">
+<img src="assets/4-infinex.jpg.jfif" class="mobile-image" alt="Mobile Phone 4">
+<img src="assets/5-iphone14.jpg.jfif" class="mobile-image" alt="Mobile Phone 5">
+<img src="assets/6-oppo.jpg.jfif" class="mobile-image" alt="Mobile Phone 6">
+<img src="assets/7-mobile.jpg.jfif" class="mobile-image" alt="Mobile Phone 7">
+<img src="assets/8-samsung.jpg.webp" class="mobile-image" alt="Mobile Phone 8">
+<img src="assets/9-vivo t2.jpg.jfif" class="mobile-image" alt="Mobile Phone 9">
+<img src="assets/10-samsung.jpg.jfif" class="mobile-image" alt="Mobile Phone 10"> -->
+<script>
+// Get references to all the image elements with the class "mobile-image"
+// var mobileImages = document.querySelectorAll(".mobile-image");
+
+// Add a click event listener to each image
+// mobileImages.forEach(function(image) {
+//   image.addEventListener("click", function() {
+    // Display an alert with the message when an image is clicked
+//     alert("Thanks for purchasing a Phone from us");
+//   });
+// });
+</script>
+
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Records</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 50%;
+      margin-top: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    button {
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<table id="studentTable">
+  <tr>
+    <th>Index</th>
+    <th>Name</th>
+    <th>Class</th>
+    <th>Action</th>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>Jhone</td>
+    <td>9</td>
+    <td><button onclick="deleteRow(0)">Delete</button></td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Talha</td>
+    <td>10</td>
+    <td><button onclick="deleteRow(3)">Delete</button></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Ukash</td>
+    <td>9</td>
+    <td><button onclick="deleteRow(1)">Delete</button></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Mark</td>
+    <td>7</td>
+    <td><button onclick="deleteRow(2)">Delete</button></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>James</td>
+    <td>3</td>
+    <td><button onclick="deleteRow(3)">Delete</button></td>
+  </tr>
+  
+  <tr>
+    <td>5</td>
+    <td>Anas</td>
+    <td>8</td>
+    <td><button onclick="deleteRow(3)">Delete</button></td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Amin</td>
+    <td>10</td>
+    <td><button onclick="deleteRow(3)">Delete</button></td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Rahim</td>
+    <td>4</td>
+    <td><button onclick="deleteRow(3)">Delete</button></td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Hamza</td>
+    <td>3</td>
+    <td><button onclick="deleteRow(3)">Delete</button></td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>jerry</td>
+    <td>5</td>
+    <td><button onclick="deleteRow(3)">Delete</button></td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>Hammad</td>
+    <td>1</td>
+    <td><button onclick="deleteRow(3)">Delete</button></td>
+  </tr>
+  
+</table>
+
+<script>
+  function deleteRow(index) {
+    var table = document.getElementById("studentTable");
+    table.deleteRow(index + 1);  -->
+    <!-- Adding 1 to account for the header row -->
+   
+ <!-- </script>
+
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Change on Mouseover</title>
+</head>
+<body>
+
+<img id="myImage" src="assets/beauty nature.jpg" alt="First Picture" onmouseover="changeImage()" onmouseout="resetImage()">
+
+<script>
+  var originalImage = "first_picture.jpg";
+  var hoverImage = "second_picture.jpg";
+
+  function changeImage() {
+    document.getElementById("myImage").src = hoverImage;
+  }
+
+  function resetImage() {
+    document.getElementById("myImage").src = originalImage;
+  }
+</script>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter</title>
+</head>
+<body>
+
+<p id="counterDisplay">Counter: 0</p>
+<button onclick="increaseCounter()">Increase</button>
+<button onclick="decreaseCounter()">Decrease</button>
+
+<script>
+  var counter = 0;
+
+  function updateCounterDisplay() {
+    document.getElementById("counterDisplay").innerHTML = "Counter: " + counter;
+  }
+
+  function increaseCounter() {
+    counter++;
+    updateCounterDisplay();
+  }
+
+  function decreaseCounter() {
+    if (counter > 0) {
+      counter--;
+      updateCounterDisplay();
+    }
+  }
+</script>
+
+</body>
+</html>
+
